@@ -127,7 +127,7 @@ function Advertising() {
             </div>
           </div>
         </div>
-        <button id='button1'>Enroll Now</button>
+        <button id='btn'>Enroll Now</button>
       </div>
 
       <div className="card mb-3" id='card2'>
@@ -163,9 +163,10 @@ function Advertising() {
         <p id='para'> A versatile Business Intelligence Data processing software offering low-code <br/> app development and data warehouse management solutions.</p>
         <p id='para'>Secure a top career as an Abinitio developer: With guaranteed placement, <br/> meeting the rising global demand for data-driven frameworks.</p>
         <p id='para'> Join the ranks of professionals harnessing Abinitio's capabilities to excel in the <br/> dynamic field of data management and analytics.</p>
+        <img src={nine} id='img8'></img>
         
-        <div id='img9'><img src={nine} alt="Partner 1" /></div>
       </div>
+      
 
       <div>
         <h5 id='h5'>Who can take this course</h5>
@@ -247,7 +248,7 @@ function Advertising() {
       <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Introduction to EME</p>
       <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Making and Breaking of vector</p>
       <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> CDC structure + Data manipulation language</p>
-      <button id='button2'> DOWNLOAD CURRICULUM</button>
+      <button id='button3'> DOWNLOAD CURRICULUM</button>
     </div>
    </div>
    <div id='faqs'>

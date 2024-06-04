@@ -1,42 +1,71 @@
-#img1{
-    height: 7%;
-    width:6%
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
 }
-#span{
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+#img1 {
+    height: 7%;
+    width: 6%;
+}
+
+#span {
     position: relative;
     left: 4%;
 }
 
-#red{
-    color:rgb(233, 5, 5)
+#red {
+    color: rgb(233, 5, 5);
 }
-#btn1{
+
+#btn1 {
     border-radius: 20px;
     font-size: 20px;
     padding: 10px;
     background-color: rgb(27, 72, 155);
     color: white;
-    
 }
-#btn1:hover{
+#button3{
+    position: relative;
+    top: 50%;
+    left: 40%;
+    width: 220px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(24, 59, 128);
+    font-size: 24px;
+    color: white;
+
+}
+
+#btn1:hover {
     background-color: rgb(11, 68, 11);
     transition: 2s;
 }
 
-#div1{
-    position: relative;
-    left: 10%;
-    top: 280%;
-    
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #btn1 {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #img1 {
+        height: 10%;
+        width: 10%;
+    }
+
+    #span {
+        left: 2%;
+    }
 }
 
-
-#div2{
-    float: right;
-    position: relative;
-}
-
-
+/* Form */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -45,21 +74,28 @@ form {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .form-group {
     margin-bottom: 15px;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
-.form-group input, .form-group select, .form-group textarea {
+
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
 }
+
 .form-group textarea {
     resize: vertical;
 }
+
 .form-group button {
     padding: 10px 15px;
     background-color: #28a745;
@@ -68,48 +104,48 @@ form {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .form-group button:hover {
     background-color: #218838;
 }
 
-#card2{
+/* Cards */
+#card2 {
     position: relative;
     top: 20%;
     padding: 5%;
     width: 100%;
 }
 
-#id1{
+#id1 {
     position: relative;
     float: right;
-    
-    
     font-size: 29px;
 }
 
-#h2{
+#h2 {
     text-align: center;
     font-size: 50px;
     padding: 5%;
 }
 
-#h5{
+#h5 {
     text-align: center;
     font-size: 35px;
     padding: 5%;
-
 }
 
-#parent{
+#parent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
     padding: 8%;
-
 }
 
-#button{
+#button,
+#button1,
+#button2 {
     position: relative;
     top: 50%;
     left: 40%;
@@ -119,62 +155,119 @@ form {
     background-color: rgb(24, 59, 128);
     font-size: 24px;
     color: white;
-    
 }
-
-#button1{
-    position: relative;
-    top: 50%;
+#btn{
     width: 170px;
     height: 70px;
-    border-radius: 20px;
     background-color: rgb(24, 59, 128);
+    border-radius: 20px;
     font-size: 24px;
     color: white;
-
-    
 }
-#button2{
-    position: relative;
-    top: 50%;
-    left: 40%;
-    width: 200px;
-    
-    height: 70px;
-    border-radius: 20px;
-    background-color: rgb(24, 59, 128);
-    font-size: 24px;
-    color: white;
-    
-}
-#para{
+#para {
     font-size: 28px;
     text-align: center;
 }
 
-#list{
+#list {
     text-align: center;
 }
 
-#toolsimg{
+#toolsimg {
     display: flex;
-    justify-content: space-evenly;
-
-}
-#img8{
+    justify-content: space-around;
     width: 100%;
 }
 
-#faqs{
-    width: 75%;
+#img8 {
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
 
+#faqs {
+    width: 75%;
     position: relative;
     left: 10%;
     padding: 5%;
-    
 }
 
-#img9{
+#img9 {
     display: flex;
     justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    #button,
+    #button1,
+    #button2 {
+        left: 50%;
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    #h2 {
+        font-size: 40px;
+    }
+
+    #h5 {
+        font-size: 30px;
+    }
+
+    #para {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    #button,
+    #button1,
+    #button2 {
+        left: 10%;
+        width: 140px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #h2 {
+        font-size: 30px;
+    }
+
+    #h5 {
+        font-size: 25px;
+    }
+
+    #para {
+        font-size: 20px;
+    }
+
+    #toolsimg {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #button,
+    #button1,
+    #button2 {
+        left: 5%;
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    #h2 {
+        font-size: 25px;
+    }
+
+    #h5 {
+        font-size: 20px;
+    }
+
+    #para {
+        font-size: 18px;
+    }
 }
