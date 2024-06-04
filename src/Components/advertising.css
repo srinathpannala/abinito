@@ -1,0 +1,180 @@
+#img1{
+    height: 7%;
+    width:6%
+}
+#span{
+    position: relative;
+    left: 4%;
+}
+
+#red{
+    color:rgb(233, 5, 5)
+}
+#btn1{
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(27, 72, 155);
+    color: white;
+    
+}
+#btn1:hover{
+    background-color: rgb(11, 68, 11);
+    transition: 2s;
+}
+
+#div1{
+    position: relative;
+    left: 10%;
+    top: 280%;
+    
+}
+
+
+#div2{
+    float: right;
+    position: relative;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    resize: vertical;
+}
+.form-group button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #218838;
+}
+
+#card2{
+    position: relative;
+    top: 20%;
+    padding: 5%;
+    width: 100%;
+}
+
+#id1{
+    position: relative;
+    float: right;
+    
+    
+    font-size: 29px;
+}
+
+#h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 5%;
+}
+
+#h5{
+    text-align: center;
+    font-size: 35px;
+    padding: 5%;
+
+}
+
+#parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    padding: 8%;
+
+}
+
+#button{
+    position: relative;
+    top: 50%;
+    left: 40%;
+    width: 170px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(24, 59, 128);
+    font-size: 24px;
+    color: white;
+    
+}
+
+#button1{
+    position: relative;
+    top: 50%;
+    width: 170px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(24, 59, 128);
+    font-size: 24px;
+    color: white;
+
+    
+}
+#button2{
+    position: relative;
+    top: 50%;
+    left: 40%;
+    width: 200px;
+    
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(24, 59, 128);
+    font-size: 24px;
+    color: white;
+    
+}
+#para{
+    font-size: 28px;
+    text-align: center;
+}
+
+#list{
+    text-align: center;
+}
+
+#toolsimg{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#img8{
+    width: 100%;
+}
+
+#faqs{
+    width: 75%;
+
+    position: relative;
+    left: 10%;
+    padding: 5%;
+    
+}
+
+#img9{
+    display: flex;
+    justify-content: center;
+}
