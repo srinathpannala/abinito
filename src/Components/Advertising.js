@@ -9,7 +9,9 @@ import five from '../images/img5.png';
 import six from '../images/img6.jpeg';
 import seven from '../images/img7.jpeg';
 import eignt from '../images/img8.png';
-import nine from '../images/img9.jpg';
+import nine from '../images/img19.jpg';
+import ten from '../images/img10.jpg';
+import eleven from '../images/img11.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faPersonWalkingLuggage, faPeopleArrows, faHandHoldingDollar, faPeopleGroup, faEnvelopeOpenText, faChalkboardUser, faComments, faPeopleRoof, faRankingStar, faPersonMilitaryToPerson, faMoneyCheckDollar, faPersonDressBurst, faPersonChalkboard, faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -33,10 +35,14 @@ function Advertising() {
             <h5 id='h5'><FontAwesomeIcon icon={faPeopleArrows} /> Top MNC Hiring Partners</h5>
             <h5 id='h5'><FontAwesomeIcon icon={faHandHoldingDollar} /> Excel salary 8 LPA to 25 LPA</h5>
             <h5 id='h5'>In Collaboration with:</h5>
+            <img src={one} alt="Partner 1" id='collaboration'/>
+            <img src={two} alt="Partner 2" id='collaboration'/>
+            
+            
           </div>
-          <div className="col-md-8">
-            <div className="card-body" id='imgdiv2'>
-              <form action="#" method="post">
+          <div className="col-md-8" >
+            <div className="card-body" >
+              <form action="#" method="post" id='formdiv'>
                 <div className="form-group">
                   <label htmlFor="name">Name:</label>
                   <input type="text" id="name" name="name" required />
@@ -59,7 +65,7 @@ function Advertising() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="skillset">Skillset:</label>
-                  <textarea id="skillset" name="skillset" rows="4" required></textarea>
+                  <textarea id="skillset" name="skillset" rows="2" required></textarea>
                 </div>
                 <div className="form-group">
                   <button type="submit">Submit</button>
@@ -82,53 +88,79 @@ function Advertising() {
       </div>
 
       <div id='parent'>
-        <h2 id='h2'>Discover Your <span id='red'>Dream Job</span> Pathway through Our Course</h2>
-        <div className="row">
-          <div className="col-sm-3">
-            <div className="card">
+        <h2 id='h2'>Discover Your <span id='red'>Dream Job</span> Pathway through <br/> Our Course</h2>
+        
+          <div className="col-sm-3" >
+            <div className="card" id='box'>
               <div className="card-body">
                 <h5 id='h5'> Top MNC Hiring partners</h5>
               </div>
             </div>
-          </div>
+          </div> 
           <div className="col-sm-3">
-            <div className="card">
+            <div className="card" id='box'>
               <div className="card-body">
                 <h5 id='h5'>1:1 Doubt Clarification</h5>
               </div>
             </div>
-          </div>
+          </div> 
           <div className="col-sm-3">
-            <div className="card">
+            <div className="card" id='box'>
               <div className="card-body">
                 <h5 id='h5'>Team Based Live Project- Real Case Scenario</h5>
               </div>
             </div>
           </div>
-          <div className="col-sm-3">
-            <div className="card">
+          {/* <div className="col-sm-3">
+            <div className="card" id='box'>
               <div className="card-body">
                 <h5 id='h5'> Intensive Interview Preparation</h5>
               </div>
             </div>
           </div>
           <div className="col-sm-3">
-            <div className="card">
+            <div className="card" id='box'>
               <div className="card-body">
                 <h5 id='h5'> 2000+ Students Placed</h5>
               </div>
             </div>
           </div>
           <div className="col-sm-3">
-            <div className="card">
+            <div className="card" id='box'>
+              <div className="card-body">
+                <h5 id='h5'>₹42 LPA Max CTC</h5>
+              </div>
+            </div>
+          </div> */}
+        
+        {/* <button id='btn'>Enroll Now</button> */}
+        </div>
+        <div id='parent'>
+        <div className="col-sm-3">
+            <div className="card" id='box'>
+              <div className="card-body">
+                <h5 id='h5'> Intensive Interview Preparation</h5>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-3">
+            <div className="card" id='box'>
+              <div className="card-body">
+                <h5 id='h5'> 2000+ Students Placed</h5>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-3">
+            <div className="card" id='box'>
               <div className="card-body">
                 <h5 id='h5'>₹42 LPA Max CTC</h5>
               </div>
             </div>
           </div>
-        </div>
-        <button id='btn'>Enroll Now</button>
+          
       </div>
+      <button id='button'>Enroll Now</button>
+
 
       <div className="card mb-3" id='card2'>
         <div className="row g-0">
@@ -168,12 +200,15 @@ function Advertising() {
       </div>
       
 
-      <div>
-        <h5 id='h5'>Who can take this course</h5>
-        <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Freshers who want to build career in ETL, Datawarehouse</p>
-        <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> People who want to switch from Non-IT to IT domain</p>
-        <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> People who want to switch from service-based companies to product-based companies</p>
-        <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Datawarehouse professionals who want to learn a new ETL tool and upgrade their knowledge</p>
+      <div >
+      <h5 id='h5'>Who can take this course</h5>
+        <div id='para'>
+        
+        <p ><FontAwesomeIcon icon={faSquareCheck} /> Freshers who want to build career in ETL, Datawarehouse</p>
+        <p ><FontAwesomeIcon icon={faSquareCheck} /> People who want to switch from Non-IT to IT domain</p>
+        <p ><FontAwesomeIcon icon={faSquareCheck} /> People who want to switch from service-based companies to product-based companies</p>
+        <p ><FontAwesomeIcon icon={faSquareCheck} /> Datawarehouse professionals who want to learn a new ETL tool and upgrade their knowledge</p>
+      </div>
       </div>
 
    <div>
@@ -232,24 +267,29 @@ function Advertising() {
     <h5 id='h5'>
     What you will <span id='red'>learn</span>
     </h5>
-    <div>
-    <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Data warehouse fundamentals</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Unix+ Abinitio architecture</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> GDE overview</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Different source system and record</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Rollback and recovery mechanism</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Useful Abinitio commands</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Working with vectors</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> SCD-2 Structure + SQL</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Abinitio transformation component</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Parallelism in Abinitio</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Generic graphs, vectors, EME, SCD CDC, PSET</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Performance Tuning</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Introduction to EME</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> Making and Breaking of vector</p>
-      <p id='para'><FontAwesomeIcon icon={faSquareCheck} /> CDC structure + Data manipulation language</p>
-      <button id='button3'> DOWNLOAD CURRICULUM</button>
+    <div id='para' >
+    
+    <div id='lern'>
+    <p ><FontAwesomeIcon icon={faSquareCheck} /> Data warehouse fundamentals</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Unix+ Abinitio architecture</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> GDE overview</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Different source system and record</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Rollback and recovery mechanism</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Useful Abinitio commands</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Working with vectors</p>
+      <p><FontAwesomeIcon icon={faSquareCheck} /> SCD-2 Structure + SQL</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Abinitio transformation component</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Parallelism in Abinitio</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Generic graphs, vectors, EME, SCD CDC, PSET</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Performance Tuning</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> Introduction to EME</p>
+      <p><FontAwesomeIcon icon={faSquareCheck} /> Making and Breaking of vector</p>
+      <p ><FontAwesomeIcon icon={faSquareCheck} /> CDC structure + Data manipulation language</p>
+      
     </div>
+    
+    </div>
+    <button id='button3'> DOWNLOAD CURRICULUM</button>
    </div>
    <div id='faqs'>
     <h5 id='h5'>FAQs</h5>
